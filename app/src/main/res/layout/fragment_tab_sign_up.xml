@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tab_sign_up">
+
+    <EditText
+        android:layout_width="341dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_radius"
+        android:hint="Name"
+        android:drawableStart="@drawable/person"
+        android:padding="16sp"
+        android:drawablePadding="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="17dp"
+        android:id="@+id/name"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="341dp"
+        android:layout_height="49dp"
+        android:background="@drawable/edit_radius"
+        android:drawableStart="@drawable/email"
+        android:ems="10"
+        android:padding="16sp"
+        android:drawablePadding="16sp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="100dp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="341dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:textSize="17dp"
+        android:drawableStart="@drawable/lock"
+        android:padding="16sp"
+        android:drawablePadding="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:inputType="numberPassword"
+        android:hint="Password"
+        android:background="@drawable/edit_radius"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="170dp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="341dp"
+        android:layout_height="49dp"
+        android:background="@drawable/edit_radius"
+        android:hint="Phone"
+        android:drawableStart="@drawable/phone"
+        android:textSize="17dp"
+        android:padding="16sp"
+        android:drawablePadding="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="240dp"/>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="224dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="340dp"
+        android:inputType="phone"
+        android:background="@drawable/btn_radius"
+        android:text="Sign Up" />
+
+    <ProgressBar
+        android:id="@+id/pBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="390dp"
+        android:visibility="invisible" />
+</FrameLayout>

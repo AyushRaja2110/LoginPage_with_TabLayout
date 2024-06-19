@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="374dp"
+        android:layout_height="198dp"
+        android:background="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="346dp"
+            android:layout_height="92dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textColor="@color/white"
+            android:textSize="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.358" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="362dp"
+        android:layout_height="606dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/constraint_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="337dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/tab_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabMode="fixed"
+            app:tabRippleColor="@color/purple_200"
+            app:tabIndicatorColor="@color/black"
+            app:tabSelectedTextColor="@color/black"
+            app:tabGravity="fill"
+            app:tabIndicatorFullWidth="false">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/login"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:text="Log in"
+                android:icon="@drawable/login"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/signup"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:text="Sign Up"
+                android:icon="@drawable/sign"/>
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpager"
+            android:layout_width="351dp"
+            android:layout_height="501dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="@color/white"
+        android:elevation="35dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/fb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/twitter"
+        app:layout_constraintTop_toBottomOf="@+id/vpager"
+        app:layout_constraintVertical_bias="0.529"
+        tools:ignore="NotSibling"
+        android:contentDescription="TODO" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/google"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:elevation="35dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/twitter"
+        app:layout_constraintTop_toBottomOf="@+id/vpager"
+        app:layout_constraintVertical_bias="0.529"
+        tools:ignore="NotSibling"
+        android:contentDescription="TODO" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/twitter"
+        android:layout_width="64dp"
+        android:backgroundTint="@color/white"
+        android:elevation="35dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpager"
+        app:layout_constraintVertical_bias="0.529"
+        tools:ignore="NotSibling"
+        android:contentDescription="TODO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
